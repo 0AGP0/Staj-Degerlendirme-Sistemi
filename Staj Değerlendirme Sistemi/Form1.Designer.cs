@@ -43,7 +43,7 @@
             this.lblName.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblName.Location = new System.Drawing.Point(109, 38);
+            this.lblName.Location = new System.Drawing.Point(103, 38);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(145, 41);
             this.lblName.TabIndex = 0;
@@ -56,7 +56,7 @@
             this.lblPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblPassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPassword.Location = new System.Drawing.Point(128, 182);
+            this.lblPassword.Location = new System.Drawing.Point(129, 183);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(99, 41);
             this.lblPassword.TabIndex = 1;
@@ -64,6 +64,7 @@
             // 
             // txtName
             // 
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtName.Location = new System.Drawing.Point(60, 93);
             this.txtName.Name = "txtName";
@@ -72,11 +73,13 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.txtPassword.Location = new System.Drawing.Point(60, 238);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(240, 31);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // groupBox1
             // 
@@ -93,9 +96,10 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnLogin.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Location = new System.Drawing.Point(107, 296);
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLogin.Location = new System.Drawing.Point(112, 301);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(138, 43);
             this.btnLogin.TabIndex = 4;

@@ -73,6 +73,12 @@
     <Compile Include="OgrenciEkle.Designer.cs">
       <DependentUpon>OgrenciEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="OgrenciListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciListesi.Designer.cs">
+      <DependentUpon>OgrenciListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Degerlendirme.resx">
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OgrenciEkle.resx">
       <DependentUpon>OgrenciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciListesi.resx">
+      <DependentUpon>OgrenciListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

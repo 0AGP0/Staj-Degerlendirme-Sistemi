@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Staj_Değerlendirme_Sistemi
 {
-    public partial class OgrenciEkle : Form
+    public partial class OgrenciListesi : Form
     {
-        public OgrenciEkle()
+        public OgrenciListesi()
         {
             InitializeComponent();
         }
 
-        private void OgrenciEkle_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnGeri_Click(object sender, EventArgs e)
         {
             Menu menu = new Menu();
             menu.Show();

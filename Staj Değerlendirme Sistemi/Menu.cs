@@ -23,17 +23,31 @@ namespace Staj_Değerlendirme_Sistemi
         {
             OgrenciEkle ogrenciEkle = new OgrenciEkle();
             ogrenciEkle.Show();
+            this.Close();
         }
 
         private void btnDeğerlendirme_Click(object sender, EventArgs e)
         {
             Degerlendirme degerlendirme = new Degerlendirme();
             degerlendirme.Show();
+            this.Close();
         }
 
         private void Menu_Load(object sender, EventArgs e)
         {
             lblName.BackColor = Color.Transparent;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OgrenciListesi ogr = new OgrenciListesi();
+            ogr.Show();
+            this.Close();
+        }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
