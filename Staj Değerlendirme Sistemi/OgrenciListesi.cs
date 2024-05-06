@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Staj_Değerlendirme_Sistemi
 {
     public partial class OgrenciListesi : Form
     {
+        string connectionString = "datasource=127.0.0.1; database=loginphp; port = 3307;user=root;";
+
         public OgrenciListesi()
         {
             InitializeComponent();
@@ -22,6 +25,21 @@ namespace Staj_Değerlendirme_Sistemi
             Menu menu = new Menu();
             menu.Show();
             this.Close();
+        }
+
+        private void OgrenciListesi_Load(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM ogrencibilgileri";
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection))
+                {
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    dataGridView1.DataSource = dataTable;
+                }
+            }
         }
     }
 }

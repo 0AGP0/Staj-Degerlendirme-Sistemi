@@ -35,49 +35,50 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cmbSinif = new System.Windows.Forms.ComboBox();
+            this.txtOgrenciNo = new System.Windows.Forms.TextBox();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
+            this.txtTC = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.cmbStajKodu = new System.Windows.Forms.ComboBox();
+            this.txtStajYeri = new System.Windows.Forms.TextBox();
+            this.txtEPosta = new System.Windows.Forms.TextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtEND = new System.Windows.Forms.TextBox();
+            this.txtStajYazı = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbRapor = new System.Windows.Forms.CheckBox();
+            this.cbDegerlendirme = new System.Windows.Forms.CheckBox();
+            this.cbFotoko = new System.Windows.Forms.CheckBox();
+            this.cbMustehak = new System.Windows.Forms.CheckBox();
+            this.cbKabul = new System.Windows.Forms.CheckBox();
+            this.cbDilek = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtAciklama = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.txtKayit = new System.Windows.Forms.TextBox();
+            this.cmbBasari = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnEkle = new System.Windows.Forms.Button();
+            this.dt1 = new System.Windows.Forms.DateTimePicker();
+            this.dt2 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -156,11 +157,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.cmbSinif);
+            this.groupBox1.Controls.Add(this.txtOgrenciNo);
+            this.groupBox1.Controls.Add(this.txtSoyad);
+            this.groupBox1.Controls.Add(this.txtAd);
+            this.groupBox1.Controls.Add(this.txtTC);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label2);
@@ -172,49 +173,55 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
-            // comboBox1
+            // cmbSinif
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(165, 179);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(191, 24);
-            this.comboBox1.TabIndex = 10;
+            this.cmbSinif.FormattingEnabled = true;
+            this.cmbSinif.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbSinif.Location = new System.Drawing.Point(165, 179);
+            this.cmbSinif.Name = "cmbSinif";
+            this.cmbSinif.Size = new System.Drawing.Size(191, 24);
+            this.cmbSinif.TabIndex = 10;
             // 
-            // textBox4
+            // txtOgrenciNo
             // 
-            this.textBox4.Location = new System.Drawing.Point(165, 146);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(191, 22);
-            this.textBox4.TabIndex = 9;
+            this.txtOgrenciNo.Location = new System.Drawing.Point(165, 146);
+            this.txtOgrenciNo.Name = "txtOgrenciNo";
+            this.txtOgrenciNo.Size = new System.Drawing.Size(191, 22);
+            this.txtOgrenciNo.TabIndex = 9;
             // 
-            // textBox3
+            // txtSoyad
             // 
-            this.textBox3.Location = new System.Drawing.Point(165, 106);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 22);
-            this.textBox3.TabIndex = 8;
+            this.txtSoyad.Location = new System.Drawing.Point(165, 106);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(191, 22);
+            this.txtSoyad.TabIndex = 8;
             // 
-            // textBox2
+            // txtAd
             // 
-            this.textBox2.Location = new System.Drawing.Point(165, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 22);
-            this.textBox2.TabIndex = 7;
+            this.txtAd.Location = new System.Drawing.Point(165, 71);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(191, 22);
+            this.txtAd.TabIndex = 7;
             // 
-            // textBox1
+            // txtTC
             // 
-            this.textBox1.Location = new System.Drawing.Point(165, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 22);
-            this.textBox1.TabIndex = 6;
+            this.txtTC.Location = new System.Drawing.Point(165, 34);
+            this.txtTC.Name = "txtTC";
+            this.txtTC.Size = new System.Drawing.Size(191, 22);
+            this.txtTC.TabIndex = 6;
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.cmbStajKodu);
+            this.groupBox2.Controls.Add(this.txtStajYeri);
+            this.groupBox2.Controls.Add(this.txtEPosta);
+            this.groupBox2.Controls.Add(this.txtTel);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
@@ -225,46 +232,49 @@
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             // 
-            // comboBox2
+            // cmbStajKodu
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cmbStajKodu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(165, 114);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(191, 24);
-            this.comboBox2.TabIndex = 10;
+            this.cmbStajKodu.FormattingEnabled = true;
+            this.cmbStajKodu.Items.AddRange(new object[] {
+            "END300",
+            "END400"});
+            this.cmbStajKodu.Location = new System.Drawing.Point(165, 114);
+            this.cmbStajKodu.Name = "cmbStajKodu";
+            this.cmbStajKodu.Size = new System.Drawing.Size(191, 24);
+            this.cmbStajKodu.TabIndex = 10;
             // 
-            // textBox5
+            // txtStajYeri
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtStajYeri.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(165, 161);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(191, 22);
-            this.textBox5.TabIndex = 9;
+            this.txtStajYeri.Location = new System.Drawing.Point(165, 161);
+            this.txtStajYeri.Name = "txtStajYeri";
+            this.txtStajYeri.Size = new System.Drawing.Size(191, 22);
+            this.txtStajYeri.TabIndex = 9;
             // 
-            // textBox7
+            // txtEPosta
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtEPosta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Location = new System.Drawing.Point(165, 71);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(191, 22);
-            this.textBox7.TabIndex = 7;
+            this.txtEPosta.Location = new System.Drawing.Point(165, 71);
+            this.txtEPosta.Name = "txtEPosta";
+            this.txtEPosta.Size = new System.Drawing.Size(191, 22);
+            this.txtEPosta.TabIndex = 7;
             // 
-            // textBox8
+            // txtTel
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtTel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Location = new System.Drawing.Point(165, 26);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(191, 22);
-            this.textBox8.TabIndex = 6;
+            this.txtTel.Location = new System.Drawing.Point(165, 26);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(191, 22);
+            this.txtTel.TabIndex = 6;
             // 
             // label7
             // 
@@ -325,8 +335,8 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.comboBox4);
-            this.groupBox3.Controls.Add(this.comboBox3);
+            this.groupBox3.Controls.Add(this.dt2);
+            this.groupBox3.Controls.Add(this.dt1);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Location = new System.Drawing.Point(36, 524);
@@ -334,22 +344,6 @@
             this.groupBox3.Size = new System.Drawing.Size(362, 94);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(186, 59);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(170, 24);
-            this.comboBox4.TabIndex = 11;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(186, 19);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(170, 24);
-            this.comboBox3.TabIndex = 10;
             // 
             // label8
             // 
@@ -376,8 +370,8 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.textBox9);
-            this.groupBox4.Controls.Add(this.textBox6);
+            this.groupBox4.Controls.Add(this.txtEND);
+            this.groupBox4.Controls.Add(this.txtStajYazı);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Location = new System.Drawing.Point(621, 50);
@@ -386,19 +380,19 @@
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             // 
-            // textBox9
+            // txtEND
             // 
-            this.textBox9.Location = new System.Drawing.Point(185, 56);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(177, 22);
-            this.textBox9.TabIndex = 12;
+            this.txtEND.Location = new System.Drawing.Point(185, 56);
+            this.txtEND.Name = "txtEND";
+            this.txtEND.Size = new System.Drawing.Size(177, 22);
+            this.txtEND.TabIndex = 12;
             // 
-            // textBox6
+            // txtStajYazı
             // 
-            this.textBox6.Location = new System.Drawing.Point(185, 19);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(177, 22);
-            this.textBox6.TabIndex = 11;
+            this.txtStajYazı.Location = new System.Drawing.Point(185, 19);
+            this.txtStajYazı.Name = "txtStajYazı";
+            this.txtStajYazı.Size = new System.Drawing.Size(177, 22);
+            this.txtStajYazı.TabIndex = 11;
             // 
             // label12
             // 
@@ -426,12 +420,12 @@
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
             this.groupBox5.Controls.Add(this.label20);
-            this.groupBox5.Controls.Add(this.checkBox6);
-            this.groupBox5.Controls.Add(this.checkBox5);
-            this.groupBox5.Controls.Add(this.checkBox4);
-            this.groupBox5.Controls.Add(this.checkBox3);
-            this.groupBox5.Controls.Add(this.checkBox2);
-            this.groupBox5.Controls.Add(this.checkBox1);
+            this.groupBox5.Controls.Add(this.cbRapor);
+            this.groupBox5.Controls.Add(this.cbDegerlendirme);
+            this.groupBox5.Controls.Add(this.cbFotoko);
+            this.groupBox5.Controls.Add(this.cbMustehak);
+            this.groupBox5.Controls.Add(this.cbKabul);
+            this.groupBox5.Controls.Add(this.cbDilek);
             this.groupBox5.Controls.Add(this.label15);
             this.groupBox5.Controls.Add(this.label16);
             this.groupBox5.Controls.Add(this.label17);
@@ -454,59 +448,59 @@
             this.label20.TabIndex = 12;
             this.label20.Text = "Başvuru Dilekçesi Verildi mi?";
             // 
-            // checkBox6
+            // cbRapor
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(344, 184);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(18, 17);
-            this.checkBox6.TabIndex = 11;
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.cbRapor.AutoSize = true;
+            this.cbRapor.Location = new System.Drawing.Point(344, 184);
+            this.cbRapor.Name = "cbRapor";
+            this.cbRapor.Size = new System.Drawing.Size(18, 17);
+            this.cbRapor.TabIndex = 11;
+            this.cbRapor.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // cbDegerlendirme
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(344, 155);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(18, 17);
-            this.checkBox5.TabIndex = 10;
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.cbDegerlendirme.AutoSize = true;
+            this.cbDegerlendirme.Location = new System.Drawing.Point(344, 155);
+            this.cbDegerlendirme.Name = "cbDegerlendirme";
+            this.cbDegerlendirme.Size = new System.Drawing.Size(18, 17);
+            this.cbDegerlendirme.TabIndex = 10;
+            this.cbDegerlendirme.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // cbFotoko
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(344, 125);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(18, 17);
-            this.checkBox4.TabIndex = 9;
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.cbFotoko.AutoSize = true;
+            this.cbFotoko.Location = new System.Drawing.Point(344, 125);
+            this.cbFotoko.Name = "cbFotoko";
+            this.cbFotoko.Size = new System.Drawing.Size(18, 17);
+            this.cbFotoko.TabIndex = 9;
+            this.cbFotoko.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // cbMustehak
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(344, 92);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(18, 17);
-            this.checkBox3.TabIndex = 8;
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cbMustehak.AutoSize = true;
+            this.cbMustehak.Location = new System.Drawing.Point(344, 92);
+            this.cbMustehak.Name = "cbMustehak";
+            this.cbMustehak.Size = new System.Drawing.Size(18, 17);
+            this.cbMustehak.TabIndex = 8;
+            this.cbMustehak.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // cbKabul
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(344, 62);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(18, 17);
-            this.checkBox2.TabIndex = 7;
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbKabul.AutoSize = true;
+            this.cbKabul.Location = new System.Drawing.Point(344, 62);
+            this.cbKabul.Name = "cbKabul";
+            this.cbKabul.Size = new System.Drawing.Size(18, 17);
+            this.cbKabul.TabIndex = 7;
+            this.cbKabul.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // cbDilek
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(344, 32);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(18, 17);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbDilek.AutoSize = true;
+            this.cbDilek.Location = new System.Drawing.Point(344, 32);
+            this.cbDilek.Name = "cbDilek";
+            this.cbDilek.Size = new System.Drawing.Size(18, 17);
+            this.cbDilek.TabIndex = 6;
+            this.cbDilek.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -566,7 +560,7 @@
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox6.Controls.Add(this.textBox11);
+            this.groupBox6.Controls.Add(this.txtAciklama);
             this.groupBox6.Controls.Add(this.label22);
             this.groupBox6.Location = new System.Drawing.Point(621, 408);
             this.groupBox6.Name = "groupBox6";
@@ -574,13 +568,13 @@
             this.groupBox6.TabIndex = 14;
             this.groupBox6.TabStop = false;
             // 
-            // textBox11
+            // txtAciklama
             // 
-            this.textBox11.Location = new System.Drawing.Point(6, 56);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(356, 146);
-            this.textBox11.TabIndex = 11;
+            this.txtAciklama.Location = new System.Drawing.Point(6, 56);
+            this.txtAciklama.Multiline = true;
+            this.txtAciklama.Name = "txtAciklama";
+            this.txtAciklama.Size = new System.Drawing.Size(356, 146);
+            this.txtAciklama.TabIndex = 11;
             // 
             // label22
             // 
@@ -593,21 +587,24 @@
             this.label22.TabIndex = 3;
             this.label22.Text = "Açıklamalar";
             // 
-            // textBox10
+            // txtKayit
             // 
-            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox10.Location = new System.Drawing.Point(154, 17);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(62, 23);
-            this.textBox10.TabIndex = 11;
+            this.txtKayit.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKayit.Location = new System.Drawing.Point(154, 17);
+            this.txtKayit.Name = "txtKayit";
+            this.txtKayit.Size = new System.Drawing.Size(62, 23);
+            this.txtKayit.TabIndex = 11;
             // 
-            // comboBox5
+            // cmbBasari
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(222, 17);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(170, 24);
-            this.comboBox5.TabIndex = 12;
+            this.cmbBasari.FormattingEnabled = true;
+            this.cmbBasari.Items.AddRange(new object[] {
+            "BAŞARILI",
+            "BAŞARISIZ"});
+            this.cmbBasari.Location = new System.Drawing.Point(222, 17);
+            this.cmbBasari.Name = "cmbBasari";
+            this.cmbBasari.Size = new System.Drawing.Size(170, 24);
+            this.cmbBasari.TabIndex = 12;
             // 
             // button1
             // 
@@ -622,6 +619,33 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnEkle
+            // 
+            this.btnEkle.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnEkle.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEkle.ForeColor = System.Drawing.Color.Black;
+            this.btnEkle.Location = new System.Drawing.Point(457, 310);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(113, 36);
+            this.btnEkle.TabIndex = 71;
+            this.btnEkle.Text = "EKLE";
+            this.btnEkle.UseVisualStyleBackColor = false;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
+            // 
+            // dt1
+            // 
+            this.dt1.Location = new System.Drawing.Point(186, 21);
+            this.dt1.Name = "dt1";
+            this.dt1.Size = new System.Drawing.Size(170, 22);
+            this.dt1.TabIndex = 72;
+            // 
+            // dt2
+            // 
+            this.dt2.Location = new System.Drawing.Point(186, 57);
+            this.dt2.Name = "dt2";
+            this.dt2.Size = new System.Drawing.Size(170, 22);
+            this.dt2.TabIndex = 73;
+            // 
             // OgrenciEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -630,9 +654,10 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1027, 656);
             this.ControlBox = false;
+            this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.cmbBasari);
+            this.Controls.Add(this.txtKayit);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -670,48 +695,49 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cmbSinif;
+        private System.Windows.Forms.TextBox txtOgrenciNo;
+        private System.Windows.Forms.TextBox txtSoyad;
+        private System.Windows.Forms.TextBox txtAd;
+        private System.Windows.Forms.TextBox txtTC;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.ComboBox cmbStajKodu;
+        private System.Windows.Forms.TextBox txtStajYeri;
+        private System.Windows.Forms.TextBox txtEPosta;
+        private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtEND;
+        private System.Windows.Forms.TextBox txtStajYazı;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbRapor;
+        private System.Windows.Forms.CheckBox cbDegerlendirme;
+        private System.Windows.Forms.CheckBox cbFotoko;
+        private System.Windows.Forms.CheckBox cbMustehak;
+        private System.Windows.Forms.CheckBox cbKabul;
+        private System.Windows.Forms.CheckBox cbDilek;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtAciklama;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.TextBox txtKayit;
+        private System.Windows.Forms.ComboBox cmbBasari;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEkle;
+        private System.Windows.Forms.DateTimePicker dt2;
+        private System.Windows.Forms.DateTimePicker dt1;
     }
 }
