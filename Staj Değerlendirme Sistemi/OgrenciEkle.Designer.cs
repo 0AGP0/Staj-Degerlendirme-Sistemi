@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,6 +49,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dt2 = new System.Windows.Forms.DateTimePicker();
+            this.dt1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -73,12 +74,8 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.txtAciklama = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.txtKayit = new System.Windows.Forms.TextBox();
-            this.cmbBasari = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnEkle = new System.Windows.Forms.Button();
-            this.dt1 = new System.Windows.Forms.DateTimePicker();
-            this.dt2 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -86,18 +83,6 @@
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(45, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Kayıt No";
             // 
             // label2
             // 
@@ -345,6 +330,20 @@
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             // 
+            // dt2
+            // 
+            this.dt2.Location = new System.Drawing.Point(186, 57);
+            this.dt2.Name = "dt2";
+            this.dt2.Size = new System.Drawing.Size(170, 22);
+            this.dt2.TabIndex = 73;
+            // 
+            // dt1
+            // 
+            this.dt1.Location = new System.Drawing.Point(186, 21);
+            this.dt1.Name = "dt1";
+            this.dt1.Size = new System.Drawing.Size(170, 22);
+            this.dt1.TabIndex = 72;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -587,25 +586,6 @@
             this.label22.TabIndex = 3;
             this.label22.Text = "Açıklamalar";
             // 
-            // txtKayit
-            // 
-            this.txtKayit.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKayit.Location = new System.Drawing.Point(154, 17);
-            this.txtKayit.Name = "txtKayit";
-            this.txtKayit.Size = new System.Drawing.Size(62, 23);
-            this.txtKayit.TabIndex = 11;
-            // 
-            // cmbBasari
-            // 
-            this.cmbBasari.FormattingEnabled = true;
-            this.cmbBasari.Items.AddRange(new object[] {
-            "BAŞARILI",
-            "BAŞARISIZ"});
-            this.cmbBasari.Location = new System.Drawing.Point(222, 17);
-            this.cmbBasari.Name = "cmbBasari";
-            this.cmbBasari.Size = new System.Drawing.Size(170, 24);
-            this.cmbBasari.TabIndex = 12;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -632,20 +612,6 @@
             this.btnEkle.UseVisualStyleBackColor = false;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
-            // dt1
-            // 
-            this.dt1.Location = new System.Drawing.Point(186, 21);
-            this.dt1.Name = "dt1";
-            this.dt1.Size = new System.Drawing.Size(170, 22);
-            this.dt1.TabIndex = 72;
-            // 
-            // dt2
-            // 
-            this.dt2.Location = new System.Drawing.Point(186, 57);
-            this.dt2.Name = "dt2";
-            this.dt2.Size = new System.Drawing.Size(170, 22);
-            this.dt2.TabIndex = 73;
-            // 
             // OgrenciEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -656,15 +622,12 @@
             this.ControlBox = false;
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.cmbBasari);
-            this.Controls.Add(this.txtKayit);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
             this.Name = "OgrenciEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OgrenciEkle";
@@ -682,13 +645,10 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -733,8 +693,6 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.TextBox txtAciklama;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox txtKayit;
-        private System.Windows.Forms.ComboBox cmbBasari;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.DateTimePicker dt2;

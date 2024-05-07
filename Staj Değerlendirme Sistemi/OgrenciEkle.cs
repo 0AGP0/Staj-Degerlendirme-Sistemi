@@ -79,8 +79,7 @@ namespace Staj_Değerlendirme_Sistemi
             int sinif = Convert.ToInt32(cmbSinif.SelectedIndex);
             string tel = txtTel.Text;
             string ePosta = txtEPosta.Text;
-            string stajKodu = cmbStajKodu.SelectedItem.ToString();
-            string Basari = cmbBasari.SelectedItem.ToString();
+            string stajKodu = cmbStajKodu.SelectedItem != null ? cmbStajKodu.SelectedItem.ToString() : "";
             string stajYeri = txtStajYeri.Text;
             string stajBas = dt1.Value.ToString("yyyy-MM-dd");
             string stajBitis = dt2.Value.ToString("yyyy-MM-dd");
@@ -105,14 +104,13 @@ namespace Staj_Değerlendirme_Sistemi
 
             if (OpenConnection())
             {
-                string query = "INSERT INTO ogrencibilgileri (basari, tc, ad, soyad, ogrenciNo, sınıf, tel, ePosta, stajKodu, stajYeri, stajBasTarihi, stajBitisTarihi, " +
+                string query = "INSERT INTO ogrencibilgileri ( tc, ad, soyad, ogrenciNo, sınıf, tel, ePosta, stajKodu, stajYeri, stajBasTarihi, stajBitisTarihi, " +
                                "dilekce, kabulYazısı, mustehaklık, kimlikFoto, stajDegerlendirme, stajRaporu, aciklama) " +
-                               "VALUES (@basari, @tc, @ad, @soyad, @ogrenciNo, @sinif, @tel, @ePosta, @stajKodu, @stajYeri, @stajBasTarihi, @stajBitisTarihi, " +
+                               "VALUES (@tc, @ad, @soyad, @ogrenciNo, @sinif, @tel, @ePosta, @stajKodu, @stajYeri, @stajBasTarihi, @stajBitisTarihi, " +
                                "@dilek, @kabul, @mustehak, @foto, @degerlendirme, @rapor, @aciklama)";
 
                 MySqlCommand cmd = new MySqlCommand(query, conn);
 
-                cmd.Parameters.AddWithValue("@basari", Basari);
                 cmd.Parameters.AddWithValue("@tc", tc);
                 cmd.Parameters.AddWithValue("@ad", ad);
                 cmd.Parameters.AddWithValue("@soyad", soyad);
@@ -136,11 +134,16 @@ namespace Staj_Değerlendirme_Sistemi
                 {
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Öğrenci başarıyla eklendi.");
-                    cmbBasari.Text = "";
                     txtTC.Text = "";
                     txtAd.Text = "";
                     txtSoyad.Text = "";
                     txtOgrenciNo.Text = "";
+                    txtAciklama.Text = "";
+                    txtEND.Text = "";
+                    txtEPosta.Text = "";
+                    txtStajYazı.Text = "";
+                    txtStajYeri.Text = "";
+                    txtTel.Text = "";
                 }
                 catch (MySqlException ex)
                 {

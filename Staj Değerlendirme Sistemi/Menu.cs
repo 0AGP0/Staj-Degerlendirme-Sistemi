@@ -49,5 +49,12 @@ namespace Staj_Değerlendirme_Sistemi
         {
             Application.Exit();
         }
+
+        private void btnOgrSil_Click(object sender, EventArgs e)
+        {
+            ogrenciSil ogrenci = new ogrenciSil();
+            ogrenci.Show();
+            this.Close();
+        }
     }
 }

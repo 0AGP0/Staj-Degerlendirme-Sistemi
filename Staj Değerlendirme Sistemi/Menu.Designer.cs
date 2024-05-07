@@ -33,6 +33,7 @@
             this.btnKayıt = new System.Windows.Forms.Button();
             this.btnDeğerlendirme = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
+            this.btnOgrSil = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblName
@@ -65,7 +66,7 @@
             this.btnKayıt.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnKayıt.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKayıt.ForeColor = System.Drawing.Color.Black;
-            this.btnKayıt.Location = new System.Drawing.Point(314, 294);
+            this.btnKayıt.Location = new System.Drawing.Point(422, 294);
             this.btnKayıt.Name = "btnKayıt";
             this.btnKayıt.Size = new System.Drawing.Size(176, 58);
             this.btnKayıt.TabIndex = 3;
@@ -101,6 +102,19 @@
             this.btnCikis.UseVisualStyleBackColor = false;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
+            // btnOgrSil
+            // 
+            this.btnOgrSil.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnOgrSil.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOgrSil.ForeColor = System.Drawing.Color.Black;
+            this.btnOgrSil.Location = new System.Drawing.Point(210, 294);
+            this.btnOgrSil.Name = "btnOgrSil";
+            this.btnOgrSil.Size = new System.Drawing.Size(176, 58);
+            this.btnOgrSil.TabIndex = 6;
+            this.btnOgrSil.Text = "Öğrenci Sil";
+            this.btnOgrSil.UseVisualStyleBackColor = false;
+            this.btnOgrSil.Click += new System.EventHandler(this.btnOgrSil_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -109,6 +123,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.btnOgrSil);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.btnDeğerlendirme);
             this.Controls.Add(this.btnKayıt);
@@ -129,5 +144,6 @@
         private System.Windows.Forms.Button btnKayıt;
         private System.Windows.Forms.Button btnDeğerlendirme;
         private System.Windows.Forms.Button btnCikis;
+        private System.Windows.Forms.Button btnOgrSil;
     }
 }

@@ -16,7 +16,7 @@ namespace Staj_Değerlendirme_Sistemi
     {
         private string selectedKayitNo = ""; // Seçilen öğrencinin kayıt numarasını saklamak için
         string connectionString = "datasource=127.0.0.1; database=loginphp; port = 3307;user=root;";
-        string query = "SELECT kayıtNo, ad, soyad FROM ogrencibilgileri";
+        string query = "SELECT kayıtNo, ad, soyad, basari FROM ogrencibilgileri";
         public Degerlendirme()
         {
             InitializeComponent();
