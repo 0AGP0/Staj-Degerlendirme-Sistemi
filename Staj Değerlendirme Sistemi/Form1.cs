@@ -24,7 +24,7 @@ namespace Staj_Değerlendirme_Sistemi
 
         public void login()
         {
-            string query = "SELECT * FROM giris WHERE UserName ='"+txtName.Text+"' AND Password = '"+ txtPassword.Text+"'";
+            string query = "SELECT * FROM login WHERE UserName ='"+txtName.Text+"' AND Password = '"+ txtPassword.Text+"'";
             MySqlConnection conn = new MySqlConnection(connectionString);
             MySqlCommand command = new MySqlCommand(query, conn);
             command.CommandTimeout = 60;
