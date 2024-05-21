@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace Staj_Değerlendirme_Sistemi
 
         }
 
-        string connectionString = "datasource=127.0.0.1; database=login; port = 3307;user=root;";
+        string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
 
         public void login()
         {

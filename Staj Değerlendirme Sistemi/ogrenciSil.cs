@@ -9,12 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace Staj_Değerlendirme_Sistemi
 {
     public partial class ogrenciSil : Form
     {
-        string connectionString = "datasource=127.0.0.1; database=loginphp; port = 3307;user=root;";
+        string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
 
         public ogrenciSil()
         {

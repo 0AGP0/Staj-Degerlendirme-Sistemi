@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace Staj_Değerlendirme_Sistemi
     public partial class Degerlendirme : Form
     {
         private string selectedKayitNo = ""; // Seçilen öğrencinin kayıt numarasını saklamak için
-        string connectionString = "datasource=127.0.0.1; database=loginphp; port = 3307;user=root;";
+        string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
         string query = "SELECT kayıtNo, ad, soyad, basari FROM ogrencibilgileri";
         public Degerlendirme()
         {
@@ -31,7 +32,6 @@ namespace Staj_Değerlendirme_Sistemi
 
         private void Degerlendirme_Load(object sender, EventArgs e)
         {
-            // Öğrencilerin listelendiği DataGridView'ı doldurmak için veritabanından verileri çek
  
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -47,7 +47,6 @@ namespace Staj_Değerlendirme_Sistemi
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // DataGridView'da hücreye tıklandığında seçilen öğrencinin kayıt numarasını al
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
@@ -96,6 +95,9 @@ namespace Staj_Değerlendirme_Sistemi
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Değerlendirme başarıyla kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Menu menu = new Menu();
+                        menu.Show();
+                        this.Close();
                     }
                     else
                     {
